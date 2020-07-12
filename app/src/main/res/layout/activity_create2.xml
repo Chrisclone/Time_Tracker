@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateActivity"
+    android:padding="@dimen/padding">
+    <TextView
+        android:id="@+id/createTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_activity"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/createNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_name"
+        android:layout_below="@id/createTitle"
+        android:layout_marginTop="@dimen/standardTop"/>
+    <EditText
+        android:id="@+id/createNameEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createNameText"
+        android:layout_marginTop="@dimen/standardTop"/>
+    <TextView
+        android:id="@+id/createTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_type"
+        android:layout_below="@id/createNameEntry"/>
+    <EditText
+        android:layout_marginTop="@dimen/standardTop"
+        android:id="@+id/createTypeEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createTypeText"/>
+    <Button
+        android:id="@+id/createCancelButton"
+        android:layout_width="@dimen/bttnWidth"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_below="@id/createTypeEntry"
+        android:layout_marginTop="@dimen/standardTop"
+        android:onClick="destroyCreateActivity"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/createSubmitButton"
+        android:layout_width="@dimen/bttnWidth"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_toRightOf="@id/createCancelButton"
+        android:layout_below="@id/createTypeEntry"
+        android:layout_marginTop="@dimen/standardTop"
+        android:onClick="saveNewActivity"/>
+
+
+</RelativeLayout>

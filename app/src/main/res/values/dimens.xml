@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bttnWidth">200dp</dimen>
+    <dimen name="standardTop">12dp</dimen>
+    <dimen name="padding">12dp</dimen>
+    <dimen name="bttm_margin">50dp</dimen>
+</resources>
